@@ -1,0 +1,45 @@
+<h3>let's begin select widget!</h3>
+
+<div class="ui-select">
+    <div class="s-header">
+        <input type="text" value="我更帅"/>
+        <i class="icon uifont i-xiasanjiao1"></i>
+    </div>
+    <div class="options-wrap">
+        <ul>
+            <li>选项一</li>
+            <li>选项二</li>
+            <li>选项一</li>
+            <li>选项二</li>
+            <li>选项一</li>
+            <li>选项二</li>
+        </ul>
+    </div>
+</div>
+
+<br/>
+
+<div class="ui-select">
+    <div class="s-header">
+        <input type="text" value="我很帅" disabled/>
+        <i class="icon uifont i-xiasanjiao1"></i>
+    </div>
+    <div class="options-wrap">
+        <ul>
+            <li>选项一</li>
+            <li>选项二</li>
+            <li>选项一</li>
+            <li>选项二</li>
+            <li>选项一</li>
+            <li>选项二</li>
+        </ul>
+    </div>
+</div>
+
+<div style="height: 10px;width: 100%;background: red;margin-top: 10px;"></div>
+
+<script>
+    seajs.use(['./article/demo/select/select'], function (o) {
+        console.log(o.init());
+    });
+</script>

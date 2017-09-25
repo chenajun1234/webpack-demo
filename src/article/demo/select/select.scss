@@ -1,0 +1,55 @@
+$select-header-height: 28px;
+$select-border-color: #d9d9d9;
+@mixin select-border-radius($radius:4px) {
+  border-radius: $radius;
+}
+
+div.ui-select {
+  position: relative;
+  z-index: 99;
+  width: 200px;
+  &:hover {
+    div.s-header {
+      input {
+        border-color: #49a9ee;
+      }
+    }
+  }
+  div.s-header {
+    position: relative;
+    cursor: pointer;
+    input {
+      &:disabled {
+        cursor: not-allowed;
+        border-color: $select-border-color;
+      }
+      transition: all 0.6s;
+      padding: 0 6px;
+      font-size: 13px;
+      color: #666;
+      border: 1px solid $select-border-color;
+      @include select-border-radius;
+      outline: none;
+      cursor: pointer;
+      width: 100%;
+      height: $select-header-height;
+    }
+    i.icon {
+      position: absolute;
+      right: 0;
+      top: 7px;
+      color: lighten($select-border-color, 1%);
+    }
+  }
+  div.options-wrap {
+    display: none;
+    height: 0;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      background: yellow;
+    }
+  }
+
+}

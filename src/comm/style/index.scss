@@ -1,0 +1,117 @@
+/*�������������ʽ��24դ��ϵͳ*/
+@import "base/base";
+@import "scroll-bar/scrollbar";
+@import "highLight/hljs";
+
+$top-height: 40px;
+
+//i.fastui.cn��ҳ��ʽ
+html {
+  height: 100%;
+  * {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  height: 100%;
+  background: #fff;
+
+  div.body-container {
+    height: 100%;
+    padding: 0 15px;
+    div.left-container {
+      height: 100%;
+      padding-top: $top-height;
+      h3.logo {
+        overflow: hidden;
+        margin: 0;
+        line-height: $top-height;
+        height: $top-height;
+        margin-top: -$top-height;
+        border-bottom: 1px dashed #eee;
+      }
+      div.catalog {
+        border-right: 1px dashed #eee;
+        overflow-y: auto;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0 10px 20px 0;
+        height: 100%;
+        div.cat-item {
+          h2 {
+            font-size: 16px;
+            color: #333;
+          }
+          ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li {
+              padding-left: 19px;
+            }
+            li span {
+              display: inline-block;
+              font-size: 13px;
+              line-height: 23px;
+              cursor: pointer;
+              color: #000;
+              border-bottom: 1px solid #ccc;
+              &.active {
+                color: #bd2c00 !important;
+                border-bottom: 1px solid #bd2c00 !important;
+              }
+              &:hover {
+                border-bottom-color: #000;
+              }
+            }
+          }
+        }
+      }
+    }
+    div.right {
+      padding: 0 10px 20px 0;
+      height: 100%;
+      overflow: auto;
+    }
+
+  }
+
+  .leader {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 48px;
+    height: auto;
+    .back-top {
+      &.show {
+        opacity: 1;
+        bottom: 0;
+      }
+
+      position: relative;
+      bottom: 60px;
+      display: block;
+      opacity: 0;
+      width: 100%;
+      height: 48px;
+      line-height: 48px;
+      background: #dd514c;
+      border-radius: 50%;
+      text-align: center;
+      transition: all 1.6s;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+        i {
+          color: #222222;
+        }
+      }
+      i {
+        font-size: 36px;
+        color: #fff;
+      }
+    }
+  }
+}

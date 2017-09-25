@@ -1,0 +1,42 @@
+/*滚动条整体*/
+::-webkit-scrollbar {
+  /*滚动条宽度*/
+  width: 8px;
+  height: 8px;
+}
+
+/*滚动条按钮*/
+::-webkit-scrollbar-button {
+
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f3f3f3; /*滑道全部*/
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #f3f3f3; /*滑道*/
+  -webkit-border-radius: 4px; /*滑道圆角宽度*/
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f3f3f3; /*滑动条表面*/
+  border: solid 1px #c0c0c0; /*滑动条边框*/
+  border-radius: 4px; /*滑动条圆角宽度*/
+}
+
+/*横竖滚动条交角*/
+::-webkit-scrollbar-corner {
+  background-color: #f3f3f3;
+}
+
+/*横竖滚动条交角图案*/
+::-webkit-resizer {
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+/*鼠标滑过滑动条*/
+::-webkit-scrollbar-thumb:hover {
+  background-color: #f3f3e0;
+}

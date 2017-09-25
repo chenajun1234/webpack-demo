@@ -1,0 +1,10 @@
+<% var i = 0; for(var cat in catObj){ %>
+<div class="cat-item">
+    <h2><%= cat %></h2>
+    <ul>
+        <% for(var mdTitle in catObj[cat]){ i++; %>
+        <li><span data-index="<%= i %>" data-url="<%= catObj[cat][mdTitle] %>"><%= mdTitle %></span></li>
+        <% } %>
+    </ul>
+</div>
+<% } %>

@@ -1,0 +1,68 @@
+<style type="text/css">
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        border: 1px solid #ccc;
+        font-size: 14px;
+        color: #333;
+    }
+
+    th, td {
+        border: 1px solid #ccc;
+    }
+
+    td {
+        padding: 3px 10px;
+    }
+
+    th {
+        background: #f5f5f5;
+        font-weight: bold;
+        font-size: 16px;
+        height: 49px;
+        line-height: 49px;
+    }
+
+    th > div {
+        display: inline-block;
+        border: 1px solid red;
+        width: 20px;
+        height: 20px;
+        /*测试了一下，这里用sub和text-bottom都可以，但是传统的middle居然不可以*/
+        vertical-align: text-bottom;
+    }
+</style>
+<table width="80%">
+    <thead>
+    <tr>
+        <th>序号</th>
+        <th>
+            年龄
+            <div>测试</div>
+            <!--放置排序按钮用的div-->
+        </th>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>爱好</th>
+        <th>特长</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>20</td>
+        <td>张三丰</td>
+        <td>男</td>
+        <td>武术</td>
+        <td>九阴白骨爪</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>20</td>
+        <td>张三丰</td>
+        <td>男</td>
+        <td>武术</td>
+        <td>九阴白骨爪</td>
+    </tr>
+    </tbody>
+</table>
